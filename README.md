@@ -2,6 +2,8 @@
 
 Automatic splash screen generator for Cordova. Create a splash screen (2208x2208) once in the root folder of your Cordova project and use cordova-splash-sharp to automatically crop and copy it for all the platforms your project supports (currenty works with iOS, Android and Windows 10).
 
+This is a fork of [cordova-splash](https://github.com/AlexDisler/cordova-splash) that uses [sharp](http://sharp.dimens.io/) instead of ImageMagick.
+
 ### Installation
 
     $ sudo npm install cordova-splash-sharp -g

@@ -1,10 +1,10 @@
-# cordova-splash
+# cordova-splash-sharp
 
-Automatic splash screen generator for Cordova. Create a splash screen (2208x2208) once in the root folder of your Cordova project and use cordova-splash to automatically crop and copy it for all the platforms your project supports (currenty works with iOS, Android and Windows 10).
+Automatic splash screen generator for Cordova. Create a splash screen (2208x2208) once in the root folder of your Cordova project and use cordova-splash-sharp to automatically crop and copy it for all the platforms your project supports (currenty works with iOS, Android and Windows 10).
 
 ### Installation
 
-    $ sudo npm install cordova-splash -g
+    $ sudo npm install cordova-splash-sharp -g
 
 ### Requirements
 
@@ -16,15 +16,15 @@ Automatic splash screen generator for Cordova. Create a splash screen (2208x2208
 
 Create a `splash.png` file in the root folder of your cordova project and run:
 
-    $ cordova-splash
+    $ cordova-splash-sharp
 
 You also can specify manually a location for your `config.xml` or `splash.png`:
 
-    $ cordova-splash --config=config.xml --splash=splash.png
+    $ cordova-splash-sharp --config=config.xml --splash=splash.png
 
 If you run a old version of Cordova for iOS and you need your files in `/Resources/icons/`, use this option:
 
-    $ cordova-splash --xcode-old
+    $ cordova-splash-sharp --xcode-old
 
 ### Icons
 

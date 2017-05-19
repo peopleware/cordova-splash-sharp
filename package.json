@@ -1,5 +1,5 @@
 {
-  "name": "cordova-splash",
+  "name": "cordova-splash-sharp",
   "version": "0.9.0",
   "description": "Automatic splash screen cropping for Cordova",
   "main": "index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/AlexDisler/cordova-splash.git"
+    "url": "git://github.com/peopleware/cordova-splash-sharp.git"
   },
   "keywords": [
     "cordova",
@@ -23,9 +23,9 @@
   "author": "Alex Disler",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AlexDisler/cordova-splash/issues"
+    "url": "https://github.com/peopleware/cordova-splash-sharp/issues"
   },
-  "homepage": "https://github.com/AlexDisler/cordova-splash",
+  "homepage": "https://github.com/peopleware/cordova-splash-sharp",
   "dependencies": {
     "colors": "^0.6.2",
     "fs-extra": "^0.30.0",

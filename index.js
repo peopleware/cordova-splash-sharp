@@ -1,7 +1,7 @@
 var fs     = require('fs-extra');
 var path   = require('path');
 var xml2js = require('xml2js');
-var ig     = require('imagemagick');
+var sharp  = require('sharp');
 var colors = require('colors');
 var _      = require('underscore');
 var Q      = require('q');
@@ -152,21 +152,16 @@ var generateSplash = function (platform, splash) {
   if (!fs.existsSync(dst)) {
     fs.mkdirsSync(dst);
   }
-  ig.crop({
-    srcPath: srcPath,
-    dstPath: dstPath,
-    quality: 1,
-    format: 'png',
-    width: splash.width,
-    height: splash.height
-  } , function(err, stdout, stderr){
-    if (err) {
-      deferred.reject(err);
-    } else {
-      deferred.resolve();
-      display.success(splash.name + ' created');
-    }
-  });
+  sharp(srcPath)
+    .resize(splash.width, splash.height)
+    .toFile(dstPath, function (err, info) {
+      if (err) {
+        deferred.reject(err);
+      } else {
+        deferred.resolve();
+        display.success(splash.name + ' created');
+      }
+    });
   return deferred.promise;
 };
 
